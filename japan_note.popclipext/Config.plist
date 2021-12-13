@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>Extension Name</key>
+		<string>Japanese Note</string>
+		<key>Extension Identifier</key>
+		<string>com.wupher.popclip.extension.japan_note</string>
+		<key>Extension Description</key>
+		<string>A Japanese tango note</string>
+		<key>Actions</key>
+		<array>
+			<dict>
+				<key>After</key>
+				<string>paste-result</string>
+				<key>Icon</key>
+				<string>text:[[単]]</string>
+				<key>Title</key>
+				<string>JP Note</string>
+				<key>Shell Script File</key>
+				<string>main.py</string>
+				<key>script interpreter</key>
+				<string>/usr/local/bin/python3</string>
+			</dict>
+		</array>
+		<key>Options</key>
+		<array>
+			<dict>
+				<key>Option Identifier</key>
+				<string>AIRTABLE_DB_URL</string>
+				<key>Option Type</key>
+				<string>string</string>
+				<key>Option Label</key>
+				<string>Airtable Word Table URL</string>
+			</dict>
+			<dict>
+				<key>Option Identifier</key>
+				<string>ARITABLE_API_KEY</string>
+				<key>Option Type</key>
+				<string>string</string>
+				<key>Option Label</key>
+				<string>Airtable API Key</string>
+			</dict>
+		</array>
+		<key>Required Software Version</key>
+		<integer>1</integer>
+		<key>Regular Expression</key>
+    	<string>[\w]+</string>
+	</dict>
+</plist>
